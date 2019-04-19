@@ -1,0 +1,220 @@
+*{
+	margin: 0px;
+	padding:0px;
+}
+body{
+    background-color: #eee;
+}
+
+ul li{
+	list-style: none;
+}
+/*导航栏start*/
+.head-top{
+	height: 95px;
+	width: 960px;
+    background: url(../images/head.png) no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+
+.head-top ul{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.head-top ul li{
+	float: left;
+	margin: 0 20px 5px;
+}
+.head-top li a{
+	color: white;
+	text-decoration: none;
+}
+.head-top li a:hover{
+	color: red;
+	text-decoration: underline;
+}
+/*导航栏end*/
+/*主体 start*/
+.content{
+	width: 960px;
+	margin: 0 auto;
+	background:url(../images/content_bg.jpg) repeat-x;
+}
+
+.content-l{
+	width: 230px;
+	height: 605px;
+	float: left;
+	background: url(../images/content_l_bg.png) no-repeat;
+	position: relative;
+	margin-left: 20px;
+ }
+.content-l img{
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	margin-left: -100px;
+}
+
+/*清除浮动，解决背影问题*/
+ .clearfix:before,
+ .clearfix:after{
+ 	content: "";
+ 	display: table;
+ }
+ .clearfix:after{
+ 	clear: both;
+ }
+ .clearfix{
+ 	*zoom:1;
+ }
+
+ /*motto*/
+ .motto{
+ 	 margin: 50px 0 0 10px;
+ 	 width: 170px;
+     padding:12px;
+ }
+ .motto h4{
+	text-align: center;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+
+ .motto p{
+ 	font-size: 14px;
+ 	line-height: 22px;
+ 	text-align: center;
+
+ }
+ .motto .motto1{
+ 	margin-top: 12px;
+ }
+ .motto .motto2{
+ 	margin-top: 12px;
+ }
+ .motto .motto3{
+ 	margin-top: 12px;
+ }
+
+ /*motto*/
+
+/*主体右边start*/
+.content-r{
+	background:url(../images/content_r_bg.png) no-repeat;
+	float: left;
+	width: 656px;
+	height: 585px;
+	margin: 8px 0 0 30px;
+}
+
+.picture{
+	position: relative;
+}
+.content-r .binner{
+    margin: 50px 0 0 25px;
+}
+.picture ul{
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	width: 42px;
+	margin-left: -21px;
+}
+.picture ul li{
+	float: left;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin: 3px;
+	background-color: #C4B478;
+	cursor: pointer; /*鼠标变成小手*/
+}
+
+.picture ul li:hover{
+	background-color: red;
+}
+
+/*主体右边end*/
+/*主体右下start*/
+.book{
+/*	background-color: pink;
+*/}
+.book-up{
+	margin: 10px 0 0 25px;
+}
+
+.book-up li,
+.book-down li{
+   float: left;
+   margin-right: 25px;
+}
+.book .book-down{
+	margin: 20px 0 0 25px;
+}
+/*主体右下end*/
+/*note start 固定定位*/
+.note{
+	width: 82px;
+	height: 335px;
+	background: url(../images/note.png) no-repeat;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+.note textarea{
+	width: 56px;
+	height: 276px;
+	margin:50px 0 0 12px;
+	border-style: none;
+	background:transparent;
+	outline: none;
+	resize: none;
+	overflow: hidden;
+	color: #ccc;
+}
+.notice {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+.notice img{
+    position: relative;
+    top: 5px;
+}
+.notice div{
+	background:url(../images/notice_bg.jpg) no-repeat;
+	width: 192px;
+	height: 79px;
+}
+.notice p{
+	overflow: hidden;
+	padding: 10px;
+	height: 60px;
+	width:130px;
+	color: gray;
+	font-size: 12px;
+}
+/*note end*/
+/*没有用到的技术点
+  table tr td 表格布局+表头thead+主体tbody
+  input标签+lable+表单域form
+  下拉菜单select标签 
+  id选择器
+  字体连写
+  没有模式转换，只有自动转的
+  backgrounder-position: position position;
+  backgrounder-position: x y;
+  合子边框(border)
+  表格(table)的细线边框
+  其属性
+  border-collapse:collapse  合并
+  表示相邻边框合并在一起。
+  盒子阴影 
+  box-shadow:h-shadow v-shadow blur spread color inset
+*/
+/*主体 end*/
